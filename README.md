@@ -6,4 +6,4 @@ node_modules/.bin/tsc
 
 #GULP - Automatizador de tarefas
 Copia o conteudo do arquivo /src/app.ts para /dist/app.js <br>
-node_modules/.bin/tsc
+node_modules/.bin/gulp build
