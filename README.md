@@ -1,9 +1,9 @@
 # nodejs_graphql_jwt
 
 #TSC - Typescript
-Copia o conteudo do arquivo /src/app.ts para /dist/app.js
+Copia o conteudo do arquivo /src/app.ts para /dist/app.js <br>
 node_modules/.bin/tsc
 
 #GULP - Automatizador de tarefas
-Copia o conteudo do arquivo /src/app.ts para /dist/app.js
+Copia o conteudo do arquivo /src/app.ts para /dist/app.js <br>
 node_modules/.bin/tsc
