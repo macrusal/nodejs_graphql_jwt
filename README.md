@@ -11,3 +11,4 @@ node_modules/.bin/gulp build
 #NPM - Node Package Manager
 
 #Nodemon - Automatizador de tarefas
+npm run dev
