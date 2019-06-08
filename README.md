@@ -9,3 +9,5 @@ Copia o conteudo do arquivo /src/app.ts para /dist/app.js <br>
 node_modules/.bin/gulp build
 
 #NPM - Node Package Manager
+
+#Nodemon - Automatizador de tarefas
