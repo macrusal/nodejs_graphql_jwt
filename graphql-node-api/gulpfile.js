@@ -24,4 +24,10 @@ gulp.task('clean', () => {
         .pipe(clean());
 });
 
-gulp.task('build',['clean', 'static', 'scripts']);
+gulp.task('build',['scripts']);
+
+gulp.task('watch', ['build'], () => {
+    return gulp.watch(['src/**/*.ts', 'src/**/*.json'], ['build']);
+});
+
+gulp.task('default', ['watch']);
