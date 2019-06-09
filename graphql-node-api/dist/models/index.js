@@ -9,6 +9,8 @@ let config = require(path.resolve(`${__dirname}./../config/config.json`))[env];
 let db = null;
 if (!db) {
     db = {};
+    const operatorAliases = false;
+    config = Object.assign({ operatorAliases }, config);
     const sequelize = new Sequelize(config.database, config.username, config.password, config);
     fs.readdirSync(__dirname)
         .filter((file) => {
