@@ -25,7 +25,7 @@ query { <br>
 #Graphql - Mutations
 mutation { <br>
   createUser(name:"Maria Isabel", <br>
-  email: "isabel@hibejix.com.br") { <br>
+  email: "isabel@email.com.br") { <br>
     id <br>
     name <br>
     email <br>
