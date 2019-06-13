@@ -12,9 +12,9 @@ export interface CommentAttributes {
     updatedAt?: string;
 }
 
-export interface CommentInterface  extends Sequelize.Instance<CommentAttributes> {}
+export interface CommentInstance  extends Sequelize.Instance<CommentAttributes> {}
 
-export interface CommentModel extends BaseModelInterface, Sequelize.Model<CommentInterface, CommentAttributes> {}
+export interface CommentModel extends BaseModelInterface, Sequelize.Model<CommentInstance, CommentAttributes> {}
 
 export default(sequelize: Sequelize.Sequelize, DataTypes: Sequelize.DataTypes): CommentModel => {
     const Comment: CommentModel = sequelize.define('Comment', {
