@@ -1,4 +1,5 @@
 import { Server } from "http";
+import { error } from "util";
 
 export const normalizePort = (val: number | string): number | string | boolean => {
     let port: number = (typeof val === 'string') ? parseInt(val) : val;
@@ -34,3 +35,9 @@ export const onListening = (server: Server) => {
         console.log(`Listening at ${bind}...`);
     }
 }
+
+export const handleError = (error: Error) => {
+    let errorMessage: string = `${error.name}: ${error.message}`;
+    console.log(errorMessage);
+    return Promise.reject(new Error(errorMessage));
+};
